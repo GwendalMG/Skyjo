@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyjo Game - 1v1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="player-section player2">
+            <h2>Player 2</h2>
+            <div class="player-grid player2-grid"></div>
+            <div class="score-display">Score: <span class="player2-score">0</span></div>
+        </div>
+        <div class="piles-container">
+            <div id="turn-indicator">Player 1's turn</div>
+            <div class="pile">
+                <h2>Draw Pile</h2>
+                <div id="draw-pile" class="card"><img class="card-image" src="Cards/card_back.png" alt="Draw Pile"></div>
+                <div id="current-card"></div>
+            </div>
+            <div class="pile">
+                <h2>Discard Pile</h2>
+                <div id="discard-pile"></div>
+            </div>
+        </div>
+        <div class="player-section player1">
+            <h2>Player 1</h2>
+            <div class="player-grid player1-grid"></div>
+            <div class="score-display">Score: <span class="player1-score">0</span></div>
+        </div>
+    </div>
+    <div id="ending-screen" class="hidden">
+        <div class="ending-content">
+            <h1>Game Over!</h1>
+            <p>Player 1 Score: <span id="player1-final-score">0</span></p>
+            <p>Player 2 Score: <span id="player2-final-score">0</span></p>
+            <p id="winner-text"></p>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
